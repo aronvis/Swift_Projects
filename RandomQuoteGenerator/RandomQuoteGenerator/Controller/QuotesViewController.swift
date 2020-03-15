@@ -37,6 +37,10 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     {
         quotesTableView.isEditing = !quotesTableView.isEditing
     }
+    @IBAction func newButtonDidTapped(_ sender: Any)
+    {
+        
+    }
     
     // Allows user to remove cell if the user clicks on the edit
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)

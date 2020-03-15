@@ -17,7 +17,7 @@ class QuoteService
         [
             Quote(message: "You missed 100% of the shots you don't take", author: "Linsday"),
             Quote(message: "What doesn't kill makes you stronger", author: "Ehsan"),
-            Quote(message: "If you aim high, you can only go lower...?", author: "Aaron")
+            Quote(message: "If you aim high, you can only go down from here", author: "Aron")
         ]
     }
     static let shared = QuoteService()

@@ -15,6 +15,8 @@
 		0E96C3A2241CA21B00118537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E96C3A0241CA21B00118537 /* LaunchScreen.storyboard */; };
 		0E96C3AD241CA41700118537 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96C3AC241CA41700118537 /* Quote.swift */; };
 		0E96C3B0241CA43400118537 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96C3AF241CA43400118537 /* QuoteService.swift */; };
+		0EDC5308241D9B480081E78D /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC5307241D9B480081E78D /* AddQuoteViewController.swift */; };
+		0EDC530A241D9E280081E78D /* RandomQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC5309241D9E280081E78D /* RandomQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0E96C3A3241CA21B00118537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E96C3AC241CA41700118537 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		0E96C3AF241CA43400118537 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		0EDC5307241D9B480081E78D /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
+		0EDC5309241D9E280081E78D /* RandomQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				0E96C399241CA21B00118537 /* QuotesViewController.swift */,
+				0EDC5307241D9B480081E78D /* AddQuoteViewController.swift */,
+				0EDC5309241D9E280081E78D /* RandomQuoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDC530A241D9E280081E78D /* RandomQuoteViewController.swift in Sources */,
 				0E96C3AD241CA41700118537 /* Quote.swift in Sources */,
+				0EDC5308241D9B480081E78D /* AddQuoteViewController.swift in Sources */,
 				0E96C39A241CA21B00118537 /* QuotesViewController.swift in Sources */,
 				0E96C3B0241CA43400118537 /* QuoteService.swift in Sources */,
 				0E96C396241CA21B00118537 /* AppDelegate.swift in Sources */,
