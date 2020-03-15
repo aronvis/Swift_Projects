@@ -28,36 +28,25 @@ class AddQuoteViewController: UIViewController
         super.touchesBegan(touches, with: event)
     }
     
-    @IBAction func messageTextFieldTapped(_ sender: Any)
+    // Pops view controller off the view controller stack
+    func removeViewController()
     {
-        if authorTextField.isFirstResponder
-        {
-            authorTextField.resignFirstResponder()
-        }
-        messageTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func authorTextFieldTapped(_ sender: Any)
-    {
-        if messageTextField.isFirstResponder
-        {
-            messageTextField.resignFirstResponder()
-        }
-        authorTextField.becomeFirstResponder()
+         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func saveButtonDidTapped(_ sender: UIButton)
     {
-        guard let message = messageTextField?.text else
+        guard let message = messageTextField.text else
         {
             return
         }
-        guard let author = authorTextField?.text else
+        guard let author = authorTextField.text else
         {
             return
         }
         let quote = Quote(message: message, author: author)
         QuoteService.shared.add(quote: quote)
+        removeViewController()
     }
     
     override func viewDidLoad()

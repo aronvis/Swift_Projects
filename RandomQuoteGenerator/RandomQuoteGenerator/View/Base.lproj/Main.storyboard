@@ -143,17 +143,11 @@
                                 <rect key="frame" x="30" y="242.66666666666663" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="messageTextFieldTapped:" destination="VK6-Yb-PXj" eventType="editingDidEnd" id="YQr-ue-jVE"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGB-tL-Zr0">
                                 <rect key="frame" x="30" y="330.66666666666669" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="authorTextFieldTapped:" destination="VK6-Yb-PXj" eventType="editingDidEnd" id="P4e-ow-TG8"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Quote Entry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-DE-7R4">
                                 <rect key="frame" x="64" y="138" width="286" height="40.666666666666657"/>
@@ -274,13 +268,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New" id="q3q-jw-M4B">
                             <connections>
-                                <action selector="newButtonDidTapped:" destination="BYZ-38-t0r" id="euc-XE-809"/>
+                                <segue destination="VK6-Yb-PXj" kind="show" id="MPu-1E-AHT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="quotesTableView" destination="qG9-Qe-sDx" id="ttv-h7-iET"/>
-                        <segue destination="VK6-Yb-PXj" kind="show" id="gML-Eb-ZMK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -37,10 +37,6 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
     {
         quotesTableView.isEditing = !quotesTableView.isEditing
     }
-    @IBAction func newButtonDidTapped(_ sender: Any)
-    {
-        
-    }
     
     // Allows user to remove cell if the user clicks on the edit
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
@@ -50,6 +46,14 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
             QuoteService.shared.remove(at: indexPath.row)
             quotesTableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    // Updates table view after returning from segue
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        quotesTableView.reloadData()
+        
     }
     
     override func viewDidLoad()
