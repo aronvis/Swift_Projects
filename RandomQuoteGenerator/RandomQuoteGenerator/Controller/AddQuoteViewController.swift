@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddQuoteViewController: UIViewController
+class AddQuoteViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
@@ -49,9 +49,18 @@ class AddQuoteViewController: UIViewController
         removeViewController()
     }
     
+    // Hides the keyboard when the user presses return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        messageTextField.delegate = self
+        authorTextField.delegate = self
         messageTextField.becomeFirstResponder()
     }
 }
